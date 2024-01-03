@@ -1,1 +1,3 @@
-cerated the main python file
+import streamlit
+
+streamlit.title('The most painful day of my life')
