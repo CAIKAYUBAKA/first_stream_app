@@ -1,10 +1,11 @@
 
 import streamlit
 
-streamlit.title('The happiest day of my life,I found Jesus,received Him into my life')
+streamlit.title('My Mom's New Healthy Diner')
 
-streamlit.header('God judges us according to our works')
-streamlit.text('And He rewards each man accordingly to what he/she has done')
-streamlit.text('The ultimate test of greatness is how you treat every human being')
-streamlit.text('If you have holy shamelessness, you would not care what people think or say')
+streamlit.header('Breakfast Favourites')
+streamlit.text('🥣 Omega 3 & Blueberry Oatmeal')
+streamlit.text('🥗 Kale, Spinach & Rocket Smoothie')
+streamlit.text(' 🐔 Hard-Boiled Free-Range Egg')
+streamlit.text('🥑🍞 Avocado toast')
 
