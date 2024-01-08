@@ -1,4 +1,3 @@
-
 import streamlit
 streamlit.header("🍌🥭 ADAICHIE'S NEW APP🥝🍇")
 streamlit.title("My Mom's New Healthy Diner")
