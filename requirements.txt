@@ -2,6 +2,7 @@
 snowflake-connector-python
 
 import snowflake.connector
+
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
 my_cur.execute("CHIMDINMA","HT00613" ,"AWS_CA_CENTRAL_1")
