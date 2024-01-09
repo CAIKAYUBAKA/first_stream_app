@@ -39,8 +39,7 @@ try:
   else:
     back_from_function = get_fruityvice_data(fruit_choice)
     streamlit.dataframe(back_from_function)
-      
-streamlit.header("View Our Fruit List - Add Your Favourites!:")
+      streamlit.header("View Our Fruit List - Add Your Favourites!:")
 def get_fruit_load_list():
     with my_cnx.cursor() as my_cur:
         my_cur.execute("SELECT * FROM fruit_load_list")
