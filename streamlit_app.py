@@ -36,9 +36,12 @@ def get_fruityvice_data(this_fruit_choice):
     fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + this_fruit_choice)
     fruityvice_normalized = pd.json_normalize(fruityvice_response.json())
     return fruityvice_normalized
-my_data_row = my_cur.fetchone()
+     my_cur.execute("SELECT * FROM fruit_load_list")
+     my_data_rows = my_cur.fetchall()
 streamlit.header("The fruit load list contains")
-streamlit.dataframe(my_data_row)
+streamlit.dataframe(my_data_rows)
+
+
 
 
 add_my_fruit = streamlit.text_input('What fruit would you like to add?')
