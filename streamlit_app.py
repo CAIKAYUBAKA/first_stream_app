@@ -36,8 +36,6 @@ def get_fruityvice_data(this_fruit_choice):
 streamlit.write('Thanks for adding ', add_my_fruit)
 my_cur.execute("insert into fruit_load_list values('from streamlit")")
 
-#don't run anythinfg past this line while we troubleshoot
-streamlit.stop()
 #import snowflake.connector
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
